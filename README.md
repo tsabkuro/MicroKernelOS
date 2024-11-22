@@ -1,45 +1,80 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# Project Name
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
-
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+Welcome to my **microkernel-based operating system** project! This repository contains the source code and related files I developed as part of my academic work. Due to licensing and school policies, some files have been encrypted and are not publicly available in this repository. However, the unencrypted files listed below are my own work, and they are provided for demonstration purposes.
 
 ---
 
-## Edit a file
+## 📂 Repository Structure
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+Below is a brief overview of the structure of this repository, focusing on the unencrypted files:
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+### **Unencrypted Files**
+These files represent my own contributions and are accessible in their original form:
+- **`lib/util`**: General utility functions developed to support various components of the system.
+- **`lib/mm/mm.c`**: Implements the memory management subsystem for the microkernel.
+- **`lib/aos/paging.c`**: Contains the paging implementation for address space management.
+- **`lib/grading/tests/test_paging.c`**: A test suite designed to verify the correctness of the paging subsystem.
+- **`lib/hashtable/hashtable.c`**: Implements a custom hashtable for efficient data storage and retrieval.
 
----
-
-## Create a file
-
-Next, you’ll add a new file to this repository.
-
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
-
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+### **Encrypted Files**
+All other files in this repository have been encrypted to comply with licensing and school policies. These files are part of the broader system but cannot be distributed publicly.
 
 ---
 
-## Clone a repository
+## 🔑 Accessing Encrypted Files
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+The encrypted files in this repository are not directly accessible. If you're part of the academic institution or otherwise authorized to access the full codebase, please contact me directly for further details.
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+---
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+## ⚙️ How to Navigate
+
+Since many files have been encrypted, here are a few tips for navigating the repository:
+1. Focus on the **`lib/`** directory, which contains the unencrypted source files mentioned above.
+2. Explore the **tests** in `lib/grading/tests` to see how I verified the functionality of key components.
+3. For general-purpose utilities, see the **`lib/util`** folder.
+
+---
+
+## 🛠️ Features of the Unencrypted Files
+
+### **1. Memory Management (`lib/mm/mm.c`)**
+- Implements low-level memory allocation and deallocation.
+- Handles slab allocators, page allocators, and other fundamental memory operations.
+
+### **2. Paging Subsystem (`lib/aos/paging.c`)**
+- Provides support for virtual memory through paging.
+- Includes mapping functions and page fault handlers.
+
+### **3. Hashtable Implementation (`lib/hashtable/hashtable.c`)**
+- Custom hashtable designed for efficient key-value storage.
+- Used in various subsystems for fast lookup and insertion.
+
+### **4. Test Suite (`lib/grading/tests/test_paging.c`)**
+- Contains test cases to verify the correctness of the paging subsystem.
+- Demonstrates the robustness and reliability of the implementation.
+
+### **5. Utilities (`lib/util`)**
+- Collection of helper functions used across multiple modules.
+- Simplifies debugging, logging, and general-purpose operations.
+
+---
+
+## 🔍 How to Explore the Code
+1. **Start with `README.md`:** Provides an overview of the repository structure and highlights key components.
+2. **Navigate to `lib/`:** Focus on the subdirectories to see the unencrypted source code.
+3. **Run Tests:** Use the test files in `lib/grading/tests` to understand the expected behavior of key features.
+
+---
+
+## 📝 Licensing and Compliance
+
+This repository includes work completed for academic purposes. As such:
+- **Encrypted files**: These files are not publicly available due to licensing and school policies.
+- **Unencrypted files**: These are my original contributions, and you are free to explore them within the scope of this repository.
+
+If you have any questions about the encrypted files or the project in general, feel free to reach out.
+
+---
+
+Thank you for your interest in my project! 🚀
