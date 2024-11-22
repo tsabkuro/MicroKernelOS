@@ -1,4 +1,4 @@
-# Project Name
+# MicroKernelOS
 
 Welcome to my **microkernel-based operating system** project! This repository contains the source code and related files I developed as part of my academic work. Due to licensing and school policies, some files have been encrypted and are not publicly available in this repository. However, the unencrypted files listed below are my own work, and they are provided for demonstration purposes.
 
