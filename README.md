@@ -1,6 +1,6 @@
 # MicroKernelOS
 
-Welcome to our **microkernel-based operating system** project! This repository contains the source code and related files that my team and I developed as part of our academic work. This project was a collaborative effort between three other contributors and myself. Due to licensing and school policies, some files have been encrypted and are not publicly available in this repository. However, the unencrypted files listed below are my own work, and they are provided for demonstration purposes.
+Welcome to our **microkernel-based operating system** project! This repository contains the source code and related files that my team and I developed as part of our academic work. This project was a collaborative effort between three other contributors and myself. Due to licensing and school policies, some files have been encrypted and are not publicly available in this repository. However, the unencrypted files listed below are our own work, and they are provided for demonstration purposes.
 
 ---
 
