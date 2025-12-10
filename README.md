@@ -1,80 +1,48 @@
-# MicroKernelOS
+# MicroKernel OS
 
-Welcome to our **microkernel-based operating system** project! This repository contains the source code and related files that my team and I developed as part of our academic work. This project was a collaborative effort between three other contributors and myself. Due to licensing and school policies, some files have been encrypted and are not publicly available in this repository. However, the unencrypted files listed below are our own work, and they are provided for demonstration purposes.
+This repository contains a microkernel-based operating system developed as part of an academic systems project. The project was completed collaboratively by a team of four. Due to university licensing and policy restrictions, portions of the codebase are encrypted and not publicly available. The unencrypted files included here represent my original contributions and are provided for demonstration purposes.
 
----
+## Repository Overview
 
-## 📂 Repository Structure
+The repository contains a subset of the full system. All publicly visible source files are written by me and focus primarily on memory management and core runtime utilities.
 
-Below is a brief overview of the structure of this repository, focusing on the unencrypted files:
+### Public Source Files
 
-### **Unencrypted Files**
-These files represent my own contributions and are accessible in their original form:
-- **`lib/util`**: General utility functions developed to support various components of the system.
-- **`lib/mm/mm.c`**: Implements the memory management subsystem for the microkernel.
-- **`lib/aos/paging.c`**: Contains the paging implementation for address space management.
-- **`lib/grading/tests/test_paging.c`**: A test suite designed to verify the correctness of the paging subsystem.
-- **`lib/hashtable/hashtable.c`**: Implements a custom hashtable for efficient data storage and retrieval.
+- `lib/mm/mm.c`  
+  Implements the kernel memory management subsystem, including low-level allocation primitives and internal data structures.
 
-### **Encrypted Files**
-All other files in this repository have been encrypted to comply with licensing and school policies. These files are part of the broader system but cannot be distributed publicly.
+- `lib/aos/paging.c`  
+  Implements virtual memory and paging functionality, including page table management and fault handling support.
 
----
+- `lib/grading/tests/test_paging.c`  
+  Test suite used to validate correctness and robustness of the paging subsystem.
 
-## 🔑 Accessing Encrypted Files
+- `lib/hashtable/hashtable.c`  
+  Custom hashtable implementation used across the system for efficient key-value storage.
 
-The encrypted files in this repository are not directly accessible. If you're part of the academic institution or otherwise authorized to access the full codebase, please contact me directly for further details.
+- `lib/util/`  
+  General utility code shared across kernel components.
 
----
+### Encrypted Files
 
-## ⚙️ How to Navigate
+All remaining files in the repository are encrypted to comply with academic licensing policies. These files are part of the full operating system but cannot be distributed publicly.
 
-Since many files have been encrypted, here are a few tips for navigating the repository:
-1. Focus on the **`lib/`** directory, which contains the unencrypted source files mentioned above.
-2. Explore the **tests** in `lib/grading/tests` to see how I verified the functionality of key components.
-3. For general-purpose utilities, see the **`lib/util`** folder.
+If you are authorized to view the full codebase, feel free to contact me directly for more details.
 
----
+## Key Components
 
-## 🛠️ Features of the Unencrypted Files
+### Memory Management
 
-### **1. Memory Management (`lib/mm/mm.c`)**
-- Implements low-level memory allocation and deallocation.
-- Handles slab allocators, page allocators, and other fundamental memory operations.
+The memory management subsystem provides low-level allocation mechanisms required by the kernel. This includes support for paging-related operations and internal allocators designed for constrained environments.
 
-### **2. Paging Subsystem (`lib/aos/paging.c`)**
-- Provides support for virtual memory through paging.
-- Includes mapping functions and page fault handlers.
+### Virtual Memory and Paging
 
-### **3. Hashtable Implementation (`lib/hashtable/hashtable.c`)**
-- Custom hashtable designed for efficient key-value storage.
-- Used in various subsystems for fast lookup and insertion.
+The paging subsystem handles address space management and virtual-to-physical memory translation. The implementation focuses on correctness, safety, and reliability under constrained kernel conditions.
 
-### **4. Test Suite (`lib/grading/tests/test_paging.c`)**
-- Contains test cases to verify the correctness of the paging subsystem.
-- Demonstrates the robustness and reliability of the implementation.
+### Testing
 
-### **5. Utilities (`lib/util`)**
-- Collection of helper functions used across multiple modules.
-- Simplifies debugging, logging, and general-purpose operations.
+Paging functionality is validated using a dedicated test suite to ensure correct behavior and catch edge cases early during development.
 
----
+## Notes
 
-## 🔍 How to Explore the Code
-1. **Start with `README.md`:** Provides an overview of the repository structure and highlights key components.
-2. **Navigate to `lib/`:** Focus on the subdirectories to see the unencrypted source code.
-3. **Run Tests:** Use the test files in `lib/grading/tests` to understand the expected behavior of key features.
-
----
-
-## 📝 Licensing and Compliance
-
-This repository includes work completed for academic purposes. As such:
-- **Encrypted files**: These files are not publicly available due to licensing and school policies.
-- **Unencrypted files**: These are my original contributions, and you are free to explore them within the scope of this repository.
-
-If you have any questions about the encrypted files or the project in general, feel free to reach out.
-
----
-
-Thank you for your interest in my project! 🚀
+This project was designed to closely mirror real operating system concepts such as memory protection, address translation, and kernel-level resource management. While not all source files can be shared publicly, the code provided reflects the core systems work completed as part of the project.
